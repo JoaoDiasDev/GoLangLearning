@@ -1,26 +1,29 @@
 package main
 
-import "fmt"
+import (
+	"log"
+	"time"
+)
+
+var s = "seven"
+
+type User struct {
+	FirstName   string
+	LastName    string
+	PhoneNumber string
+	Age         int
+	BirthDate   time.Time
+}
 
 func main() {
-	fmt.Println("Hello, World!")
+	user := User{
+		FirstName: "John",
+		LastName:  "Doe",
+		PhoneNumber: "123456789",
+		Age:       30,
+		BirthDate: time.Now(),
+	}
 
-	var whatToSay string
-	var i int
-
-	whatToSay = "Goodbye, cruel world!"
-
-	fmt.Println(whatToSay)
-
-	i = 7
-
-	fmt.Println("i is set to", i)
-
-	whatWasSaid, somethingElse := saySomething()
-
-	fmt.Println("The function returned", whatWasSaid, somethingElse)
+	log.Println(user.FirstName,user.LastName, "Birth date:", user.BirthDate)
 }
 
-func saySomething() (string, string) {
-	return "something!", "else"
-}

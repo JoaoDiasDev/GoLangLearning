@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/joaodiasdev/hellowordwebapp/pkg/config"
-	"github.com/joaodiasdev/hellowordwebapp/pkg/handlers"
-	"github.com/joaodiasdev/hellowordwebapp/pkg/render"
+	"github.com/joaodiasdev/gobookings/pkg/config"
+	"github.com/joaodiasdev/gobookings/pkg/handlers"
+	"github.com/joaodiasdev/gobookings/pkg/render"
 )
 
 const portNumber = ":8080"

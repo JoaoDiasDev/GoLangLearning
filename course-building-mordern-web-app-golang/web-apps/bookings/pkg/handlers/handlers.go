@@ -3,9 +3,9 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/joaodiasdev/hellowordwebapp/pkg/config"
-	"github.com/joaodiasdev/hellowordwebapp/pkg/models"
-	"github.com/joaodiasdev/hellowordwebapp/pkg/render"
+	"github.com/joaodiasdev/gobookings/pkg/config"
+	"github.com/joaodiasdev/gobookings/pkg/models"
+	"github.com/joaodiasdev/gobookings/pkg/render"
 )
 
 // Repo the repository used by the handlers
